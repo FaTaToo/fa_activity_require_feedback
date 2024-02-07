@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-inherit="mail.ActivityMarkDonePopover" t-inherit-mode="extension">
+        <xpath expr="//textarea[hasclass('o_ActivityMarkDonePopover_feedback')]" position="before">
+            <t t-if="activity.requireFeedback">
+                <div class="o_ActivityMarkDonePopover_requireFeedback" style="margin-bottom: 10px;">Feedback is required</div>
+            </t>
+        </xpath>
+    </t>
+
+</templates>
